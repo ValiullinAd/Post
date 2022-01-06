@@ -15,7 +15,7 @@ public class Post {
     private LikesInfo likesInfo;
     private RepostsInfo repostsInfo;
     private ViewsInfo viewsInfo;
-    private PostType postType;
+    private String postType;
     private PostSource postSource;
     private Geo geo;
     private int signerId;
@@ -91,4 +91,5 @@ public class Post {
     public void setReplyPostId(int replyPostId) {
         this.replyPostId = replyPostId;
     }
+    // + get/set на все поля
 }

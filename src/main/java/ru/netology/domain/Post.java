@@ -1,75 +1,94 @@
 package ru.netology.domain;
 
 public class Post {
-    private int postId;
-    private int postData;
-    private int nameId;
-    private int imageId;
-    private int postTime;
-    private int giveMeLike;
-    private int forwardTo;
-    private int viewId;
+    private int id;
+    private int ownerId;
+    private String text;
+    private int fromId;
+    private int createdBy;
+    private int data;
+    private int replyOwnerId;
+    private int replyPostId;
+    private int friendsOnly;
+    private CommentsInfo commentsInfo;
+    private CopyrightInfo copyright;
+    private LikesInfo likesInfo;
+    private RepostsInfo repostsInfo;
+    private ViewsInfo viewsInfo;
+    private PostType postType;
+    private PostSource postSource;
+    private Geo geo;
+    private int signerId;
+    private int canPin;
+    private int canDelete;
+    private int canEdit;
+    private int isPinned;
+    private int markedAsAds;
+    private boolean isFavorite;
+    private Donut donut;
+    private int postponedId;
 
 
-    public int getPostId() {
-        return postId;
+
+    public int getId() {
+        return id;
     }
 
-    public void setPostId(int postId) {
-        this.postId = postId;
+    public void setId(int id) {
+        this.id = id;
     }
-    public int getPostData() {
-        return postData;
-    }
-
-    public void setPostData(int postData) {
-        this.postData = postData;
+    public int getOwnerId() {
+        return ownerId;
     }
 
-    public int getNameId() {
-        return nameId;
+    public void setOwnerId(int ownerId) {
+        this.ownerId = ownerId;
     }
 
-    public void setNameId(int nameId) {
-        this.nameId = nameId;
+    public String getText() {
+        return text;
     }
 
-    public int getImageId() {
-        return imageId;
+    public void setText(String text) {
+        this.text = text;
     }
 
-    public void setImageId(int imageId) {
-        this.imageId = imageId;
+    public int getFromId() {
+        return fromId;
     }
 
-    public int getPostTime() {
-        return postTime;
+    public void setFromId(int fromId) {
+        this.fromId = fromId;
     }
 
-    public void setPostTime(int postTime) {
-        this.postTime = postTime;
-    }
-    public int getGiveMeLike() {
-        return giveMeLike;
+    public int getCreatedBy() {
+        return createdBy;
     }
 
-    public void setGiveMeLike(int giveMeLike) {
-        this.giveMeLike = giveMeLike;
+    public void setCreatedBy(int createdBy) {
+        this.createdBy = createdBy;
+    }
+    public int getData() {
+        return data;
     }
 
-    public int getForwardTo() {
-        return forwardTo;
+    public void setData(int data) {
+        this.data = data;
     }
 
-    public void setForwardTo(int forwardTo) {
-        this.forwardTo = forwardTo;
+    public int getReplyOwnerId() {
+        return replyOwnerId;
     }
 
-    public int getViewId() {
-        return viewId;
+    public void setReplyOwnerId(int replyOwnerId) {
+        this.replyOwnerId = replyOwnerId;
     }
 
-    public void setViewId(int viewId) {
-        this.viewId = viewId;
+    public int getReplyPostId() {
+        return replyPostId;
+    }
+
+    public void setReplyPostId(int replyPostId) {
+        this.replyPostId = replyPostId;
     }
 }
